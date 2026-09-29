@@ -17,8 +17,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install pytest
-        run: pip install pytest
+      - name: Install quality tools
+        run: pip install pytest pylint
 
       - name: Run tests
         run: pytest
+
+      - name: Run Pylint
+        run: pylint calculator.py
