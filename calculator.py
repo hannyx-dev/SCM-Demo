@@ -1,4 +1,8 @@
+"""Discount calculator."""
+
+
 def calculate_discount(price, customer_type):
+    """Calculate the discount based on customer type."""
     if customer_type == "premium":
         return price * 0.30
 
